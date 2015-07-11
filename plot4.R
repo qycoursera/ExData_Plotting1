@@ -12,6 +12,6 @@ plot(ts_required, df_required$Sub_metering_1 ,type='l', xlab='', ylab='Energy su
 lines(ts_required, df_required$Sub_metering_2, col='red')
 lines(ts_required, df_required$Sub_metering_3,col='blue')
 legend(x='topright', bty='n', cex=0.45, legend = c('Sub_metering_1', 'Sub_metering_2','Sub_metering_3'),lty='solid', col=c('black','red','blue'))
-plot(ts_required, df_required$Global_reactive_power ,type='l',  ylab="Voltage", xlab='datetime')
+plot(ts_required, df_required$Global_reactive_power ,type='l',  ylab="Global_reactive_power", xlab='datetime')
 dev.copy(png, file = "plot4.png")
 dev.off()
